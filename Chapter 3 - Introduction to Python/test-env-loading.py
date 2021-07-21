@@ -1,3 +1,3 @@
 import requests
 
-print(1+1)
+print(requests.__version__)
