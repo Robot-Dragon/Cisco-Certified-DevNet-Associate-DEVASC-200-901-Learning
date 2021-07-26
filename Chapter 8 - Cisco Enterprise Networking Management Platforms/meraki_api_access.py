@@ -2,7 +2,7 @@ import requests
 from requests.api import head
 
 url = 'https://api.meraki.com/api/v0/organizations'
-api_key = '8b1fbd3a287af9265a441070ab52f1fbedbd71a3'
+api_key = ''
 
 headers = {'X-Cisco-Meraki-API-Key':api_key}
 
