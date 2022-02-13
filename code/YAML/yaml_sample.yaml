@@ -1,0 +1,90 @@
+# simple key value pairs on new lines:
+app: user-authentication
+port: 9001
+version: 1.2
+
+# to add special characters, a string must be enclosed with quotes:
+newapp: "user-authentcation \n"
+
+# a yaml object is an indented set inside another key value pair
+# note: YAML is sensitive to spaces - online tools can help with formatting
+# NOTE: indentation or spacing can be anything, but all objects must be at the same level (1 space, 4 etc, it doesn't matter)
+microservice:
+  app: user-authentication
+  port: 9001
+  version: 1.2
+
+# lists use dashes to denote
+microservices:
+  - app: user-authentication-new
+    port: 9001
+    version: 1.2
+  - app: user-view
+    port: 9002
+    version: 1.0
+    # booleans - can be true/false or yes/no:
+    deployedstringreal: no
+    deployedbooleanreal: true
+    # string version for clarity:
+    deployedstring: no..
+    deployedboolean: true!
+
+# possible to do an indented list of just values:
+microservice-names:
+  - user-authentication-new
+  - user-view
+
+# lists can be embedded
+people:
+  - men:
+    - Zane
+    - Eddie
+  - women:
+    - Alysha
+    - Loz
+
+# lists can also be in square brackets for readability and alignment to programming languages:
+peoplebracketlists: 
+  - men: [Zane, Eddie]
+  - women: [Alysha, Loz]
+
+# multi-line strings cn be done without quotes and line breack character escapes using the 'pipe' (|) symbol:
+multilinestring: |
+  this is a multiline string
+  and this is the next line
+  and third line
+
+# large single line string, represented over multiple lines in the YAML file using the 'greater than' (>) symbol:
+singlelinestring: >
+  this is a large single line
+  seperated over multiple lines
+  in the YAML file
+
+# prepare a list of linux commands including an entire bash script with lists and multiline symbol:
+command:
+  - sh
+  - -c
+  - |
+    #!/usr/bin/env bash -e
+    http() {
+        local path="${1}"
+        set -- -XGET -s --fail
+        # some more stuff here
+        curl -k "$@" "http://localhost:5061${path}"
+    }
+    htto "/app/kibana"
+
+# placeholder variables with double curly braces - allows a template enginer to overwrite these with other values when parsing or using the YAML:
+# apiVersion: v1
+# kind: service
+# metadata:
+#   name: {{ .Values.service.name }}
+# spec:
+#   selector:
+#     app: {{ .Values.service.app }}
+#   ports:
+#     - protocol: TCP
+#       port: {{ .Values.service.port }}
+#       targetPort: {{ .Values.service.targetport }}
+
+# multiple YAML files or configs can be added to a single document with three dashes '---'

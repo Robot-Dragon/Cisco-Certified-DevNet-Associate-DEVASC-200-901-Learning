@@ -1,0 +1,19 @@
+{
+    "person": {
+        "name": "Zane",
+        "friends": [
+            "Wally",
+            "Eddie",
+            "Joey",
+            "Mike"
+        ]
+    },
+    "Dog": {
+        "name": "Bitey",
+        "age": 12,
+        "allergies": [
+            "peanuts",
+            "sunlight"
+        ] 
+    }
+}
