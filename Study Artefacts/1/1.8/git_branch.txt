@@ -4,3 +4,7 @@ git branch
 create a new branch with:
 git branch <name>
 
+<<<<<<< HEAD
+=======
+"this comment added while on testing branch"
+>>>>>>> testing
