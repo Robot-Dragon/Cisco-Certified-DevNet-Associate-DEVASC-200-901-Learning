@@ -1,0 +1,32 @@
+<!-- Sample file -->
+
+<root>
+    <Network>
+        <device>
+            <router>
+                <hostname>
+                    router-1
+                </hostname>
+                <IP>
+                    192.168.1.1
+                </IP>
+            </router>
+        </device>
+        <device>
+            <router hostname="router-1">
+                <IP>
+                    192.168.1.2
+                </IP>
+            </router>
+        </device>
+    </Network>
+
+    <!-- Using XML namespaces -->
+    <prod:production xmlns:prod="prod.com">
+        <prod:device>
+            <prod:router>
+                router1
+            </prod:router>
+        </prod:device>
+    </prod:production>
+</root>

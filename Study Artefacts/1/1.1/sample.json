@@ -1,0 +1,11 @@
+{
+    "Number": 23,
+    "String": "Hello world",
+    "Boolean": true,
+    "Array": ["Hello", 23, false, "another array object"],
+    "Object": {
+        "Age": 23,
+        "Person?": true
+    },
+    "Null": null
+}

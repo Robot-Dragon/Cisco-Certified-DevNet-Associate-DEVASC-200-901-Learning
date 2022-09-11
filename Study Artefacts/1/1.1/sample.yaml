@@ -1,0 +1,45 @@
+---
+# Data types: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+
+# YAML List
+People:
+  - men:
+    - Zane
+    - Eddie
+  - women:
+    - Alysha
+    - Loz
+
+# Alternate way of doing same YAML list
+PeopleBrackets:
+  - men: [Zane, Eddie]
+  - Women: [Alysha, Loz]
+
+# Dictionary (Key value pairs)
+zane:
+  age: 31
+  occupation: IT manager
+  alive: true
+
+# Dictionary alternate
+zaneflat: {age: 31, occupation: IT manager, alive: true}
+
+# Multiple types of booleans (notice the blue text):
+create_key: yes
+needs_agent: no
+knows_oop: True
+likes_emacs: TRUE
+uses_cvs: false
+
+# Use '|' for a multiline string, and '>' to fold the multi-line in YAML to a flat line
+
+include_newlines: |
+  Each of these lines
+  will appear
+  as a new line
+
+fold_flatlines: >
+  this is really
+  a single flat
+  string sentance
+
