@@ -1,0 +1,5 @@
+Ensure you're working on the main branch:
+git checkout main
+
+then merge the other branch into your current:
+git merge testing

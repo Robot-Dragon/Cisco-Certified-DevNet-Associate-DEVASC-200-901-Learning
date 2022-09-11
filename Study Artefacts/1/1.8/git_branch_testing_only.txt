@@ -1,1 +1,6 @@
 new file for testing branch
+
+this file was added exclusively to the testing branch
+
+when added and then commited, the file itself appeared only in windows file explorer when the the testing branch was checked out, and only on the testing branch on github
+
