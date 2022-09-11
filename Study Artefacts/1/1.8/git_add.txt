@@ -1,0 +1,5 @@
+command to commit current 'head' with message:
+git commit -m "files added/updated"
+
+for a small change, skip adding a file to the staging area with the -a argument:
+git commit -a -m "small file change"
