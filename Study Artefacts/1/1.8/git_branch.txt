@@ -1,0 +1,7 @@
+check branches and what branch you're on with:
+git branch
+
+create a new branch with:
+git branch <name>
+
+"this comment added while on testing branch"
