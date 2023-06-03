@@ -1,4 +1,1 @@
-git rm <file> to remove the file from working tree and index
-will remove the file from your hard drive as well
-
-git restore <file> will add the file back
+git rm
