@@ -24,7 +24,7 @@ zane:
 # Dictionary alternate
 zaneflat: {age: 31, occupation: IT manager, alive: true}
 
-# Multiple types of booleans (notice the blue text):
+# Multiple types of booleans (notice the blue text - all are valid):
 create_key: yes
 needs_agent: no
 knows_oop: True
