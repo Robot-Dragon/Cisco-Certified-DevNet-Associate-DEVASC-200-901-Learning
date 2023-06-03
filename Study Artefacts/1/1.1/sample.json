@@ -5,7 +5,8 @@
     "Array": ["Hello", 23, false, "another array object"],
     "Object": {
         "Age": 23,
-        "Person?": true
+        "Person?": true,
+        "Name": "Zane"
     },
     "Null": null
 }

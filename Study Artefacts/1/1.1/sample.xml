@@ -1,4 +1,4 @@
-<!-- Below two router devices are the same!!! -->
+<!-- Below two router devices are the same (note once adds the name to a new nested element, the 2nd has the name as an attribute)!!! -->
 <root>
     <Network>
         <device>
@@ -19,6 +19,15 @@
             </router>
         </device>
     </Network>
+
+<!-- Data can be included on the same line as the enclosing tags -->
+    <device>
+        <hostname>router-2</hostname>
+        <IP>192.168.1.3</IP>
+    </device>
+    <device hostname="router-3">
+        <IP>192.168.1.4</IP>
+    </device>
 
     <!-- Using XML namespaces -->
     <prod:production xmlns:prod="prod.com">
